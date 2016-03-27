@@ -4,5 +4,7 @@ class Turma {
     String periodo
     String professor
     int turmaId
+    static hasMany = [alunos:Aluno]
+    static hasMany = [roteiro:Roteiro]
     static constraints = {    }
 }
