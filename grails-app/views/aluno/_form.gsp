@@ -20,6 +20,24 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'submissoes', 'error')} ">
+	<label for="submissoes">
+		<g:message code="aluno.submissoes.label" default="Submissoes" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${alunoInstance?.submissoes?}" var="s">
+    <li><g:link controller="submissao" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="submissao" action="create" params="['aluno.id': alunoInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'submissao.label', default: 'Submissao')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'turmaId', 'error')} required">
 	<label for="turmaId">
 		<g:message code="aluno.turmaId.label" default="Turma Id" />

@@ -5,9 +5,8 @@ class Roteiro {
     int roteiroId
     int turmaId
     Date dataNormal
-    static hasMany = [turmas:Turma]
     static belongsTo = Turma
-    static hasMany = [submissao:Submissao]
+    static hasMany = [submissao:Submissao,turmas:Turma]
     static constraints = {
     }
 }

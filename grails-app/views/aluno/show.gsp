@@ -41,6 +41,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${alunoInstance?.submissoes}">
+				<li class="fieldcontain">
+					<span id="submissoes-label" class="property-label"><g:message code="aluno.submissoes.label" default="Submissoes" /></span>
+					
+						<g:each in="${alunoInstance.submissoes}" var="s">
+						<span class="property-value" aria-labelledby="submissoes-label"><g:link controller="submissao" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${alunoInstance?.turmaId}">
 				<li class="fieldcontain">
 					<span id="turmaId-label" class="property-label"><g:message code="aluno.turmaId.label" default="Turma Id" /></span>

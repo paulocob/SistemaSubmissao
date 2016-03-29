@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="2" hostname="PauloCésar" id="0" name="AdminControllerSpec" package="submitleda" skipped="0" tests="7" time="14.108" timestamp="2016-03-29T04:14:21">
+      <properties />
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test the index action returns the correct model" time="11.938" />
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test the create action returns the correct model" time="0.318" />
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test the save action correctly persists an instance" time="0.51">
+          <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/admin/show/1&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29147c12&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/admin/show/1&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@29147c12
+
+	at submitleda.AdminControllerSpec.Test the save action correctly persists an instance(AdminControllerSpec.groovy:57)
+</failure>
+
+      </testcase>
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test that the show action returns the correct model" time="0.114" />
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test that the edit action returns the correct model" time="0.128" />
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.797">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at submitleda.AdminControllerSpec.Test the update action performs an update on a valid domain instance(AdminControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="submitleda.AdminControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.126">
+          <failure message="Condition not satisfied:&#xa;&#xa;Admin.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Admin.count() == 1
+      |       |
+      0       false
+
+	at submitleda.AdminControllerSpec.Test that the delete action deletes an instance if it exists(AdminControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="2" hostname="PauloCésar" id="1" name="AlunoControllerSpec" package="submitleda" skipped="0" tests="7" time="2.631" timestamp="2016-03-29T04:14:35">
+      <properties />
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test the index action returns the correct model" time="1.328" />
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test the create action returns the correct model" time="0.227" />
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test the save action correctly persists an instance" time="0.178">
+          <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/aluno/show/1&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@405d8a80&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/aluno/show/1&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@405d8a80
+
+	at submitleda.AlunoControllerSpec.Test the save action correctly persists an instance(AlunoControllerSpec.groovy:57)
+</failure>
+
+      </testcase>
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test that the show action returns the correct model" time="0.203" />
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test that the edit action returns the correct model" time="0.129" />
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.373">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at submitleda.AlunoControllerSpec.Test the update action performs an update on a valid domain instance(AlunoControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="submitleda.AlunoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.149">
+          <failure message="Condition not satisfied:&#xa;&#xa;Aluno.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+
+	at submitleda.AlunoControllerSpec.Test that the delete action deletes an instance if it exists(AlunoControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="2" hostname="PauloCésar" id="2" name="RoteiroControllerSpec" package="submitleda" skipped="0" tests="7" time="1.309" timestamp="2016-03-29T04:14:38">
+      <properties />
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test the index action returns the correct model" time="0.534" />
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test the create action returns the correct model" time="0.13" />
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test the save action correctly persists an instance" time="0.141">
+          <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/roteiro/show/1&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@b32e983&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/roteiro/show/1&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@b32e983
+
+	at submitleda.RoteiroControllerSpec.Test the save action correctly persists an instance(RoteiroControllerSpec.groovy:57)
+</failure>
+
+      </testcase>
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test that the show action returns the correct model" time="0.077" />
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test that the edit action returns the correct model" time="0.082" />
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.197">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at submitleda.RoteiroControllerSpec.Test the update action performs an update on a valid domain instance(RoteiroControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="submitleda.RoteiroControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.111">
+          <failure message="Condition not satisfied:&#xa;&#xa;Roteiro.count() == 1&#xa;        |       |&#xa;        0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Roteiro.count() == 1
+        |       |
+        0       false
+
+	at submitleda.RoteiroControllerSpec.Test that the delete action deletes an instance if it exists(RoteiroControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="2" hostname="PauloCésar" id="3" name="SubmissaoControllerSpec" package="submitleda" skipped="0" tests="7" time="1.565" timestamp="2016-03-29T04:14:39">
+      <properties />
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test the index action returns the correct model" time="0.647" />
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test the create action returns the correct model" time="0.078" />
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test the save action correctly persists an instance" time="0.172">
+          <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/submissao/show/1&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2b99c937&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/submissao/show/1&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2b99c937
+
+	at submitleda.SubmissaoControllerSpec.Test the save action correctly persists an instance(SubmissaoControllerSpec.groovy:57)
+</failure>
+
+      </testcase>
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test that the show action returns the correct model" time="0.094" />
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test that the edit action returns the correct model" time="0.124" />
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.268">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at submitleda.SubmissaoControllerSpec.Test the update action performs an update on a valid domain instance(SubmissaoControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="submitleda.SubmissaoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.147">
+          <failure message="Condition not satisfied:&#xa;&#xa;Submissao.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Submissao.count() == 1
+          |       |
+          0       false
+
+	at submitleda.SubmissaoControllerSpec.Test that the delete action deletes an instance if it exists(SubmissaoControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="2" hostname="PauloCésar" id="4" name="TurmaControllerSpec" package="submitleda" skipped="0" tests="7" time="1.035" timestamp="2016-03-29T04:14:41">
+      <properties />
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test the index action returns the correct model" time="0.478" />
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test the create action returns the correct model" time="0.057" />
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test the save action correctly persists an instance" time="0.078">
+          <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/turma/show/1&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5950054d&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/turma/show/1&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@5950054d
+
+	at submitleda.TurmaControllerSpec.Test the save action correctly persists an instance(TurmaControllerSpec.groovy:57)
+</failure>
+
+      </testcase>
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test that the show action returns the correct model" time="0.081" />
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test that the edit action returns the correct model" time="0.071" />
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.18">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at submitleda.TurmaControllerSpec.Test the update action performs an update on a valid domain instance(TurmaControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="submitleda.TurmaControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.074">
+          <failure message="Condition not satisfied:&#xa;&#xa;Turma.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Turma.count() == 1
+      |       |
+      0       false
+
+	at submitleda.TurmaControllerSpec.Test that the delete action deletes an instance if it exists(TurmaControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
