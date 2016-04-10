@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${submissaoInstance?.horaEnvio}">
+				<li class="fieldcontain">
+					<span id="horaEnvio-label" class="property-label"><g:message code="submissao.horaEnvio.label" default="Hora Envio" /></span>
+					
+						<span class="property-value" aria-labelledby="horaEnvio-label"><g:formatDate date="${submissaoInstance?.horaEnvio}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${submissaoInstance?.roteiro}">
 				<li class="fieldcontain">
 					<span id="roteiro-label" class="property-label"><g:message code="submissao.roteiro.label" default="Roteiro" /></span>

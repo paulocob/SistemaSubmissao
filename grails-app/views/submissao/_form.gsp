@@ -20,6 +20,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'horaEnvio', 'error')} required">
+	<label for="horaEnvio">
+		<g:message code="submissao.horaEnvio.label" default="Hora Envio" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:datePicker name="horaEnvio" precision="minute"  value="${submissaoInstance?.horaEnvio}"  />
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'roteiro', 'error')} required">
 	<label for="roteiro">
 		<g:message code="submissao.roteiro.label" default="Roteiro" />

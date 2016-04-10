@@ -4,7 +4,13 @@ class Turma {
     String periodo
     String professor
     static hasMany = [roteiro:Roteiro,alunos:Aluno]
-    static constraints = {    }
+ 
+
+	static constraints = {
+		nomeDaTurma maxSize : 10, nullable : false
+		periodo maxSize : 6, nullable : false
+		professor maxSize : 30, nullable : false
+	}
 	
 	static mapping = {
 		table 'turma'

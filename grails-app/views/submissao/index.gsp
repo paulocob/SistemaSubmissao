@@ -28,6 +28,8 @@
 					
 						<g:sortableColumn property="dataEnvio" title="${message(code: 'submissao.dataEnvio.label', default: 'Data Envio')}" />
 					
+						<g:sortableColumn property="horaEnvio" title="${message(code: 'submissao.horaEnvio.label', default: 'Hora Envio')}" />
+					
 						<th><g:message code="submissao.roteiro.label" default="Roteiro" /></th>
 					
 					</tr>
@@ -39,6 +41,8 @@
 						<td><g:link action="show" id="${submissaoInstance.id}">${fieldValue(bean: submissaoInstance, field: "aluno")}</g:link></td>
 					
 						<td><g:formatDate date="${submissaoInstance.dataEnvio}" /></td>
+					
+						<td><g:formatDate date="${submissaoInstance.horaEnvio}" /></td>
 					
 						<td>${fieldValue(bean: submissaoInstance, field: "roteiro")}</td>
 					

@@ -23,20 +23,20 @@
 			</g:if>
 			<ol class="property-list aluno">
 			
-				<g:if test="${alunoInstance?.matricula}">
-				<li class="fieldcontain">
-					<span id="matricula-label" class="property-label"><g:message code="aluno.matricula.label" default="Matricula" /></span>
-					
-						<span class="property-value" aria-labelledby="matricula-label"><g:fieldValue bean="${alunoInstance}" field="matricula"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${alunoInstance?.nome}">
 				<li class="fieldcontain">
 					<span id="nome-label" class="property-label"><g:message code="aluno.nome.label" default="Nome" /></span>
 					
 						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${alunoInstance}" field="nome"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${alunoInstance?.matricula}">
+				<li class="fieldcontain">
+					<span id="matricula-label" class="property-label"><g:message code="aluno.matricula.label" default="Matricula" /></span>
+					
+						<span class="property-value" aria-labelledby="matricula-label"><g:fieldValue bean="${alunoInstance}" field="matricula"/></span>
 					
 				</li>
 				</g:if>

@@ -24,9 +24,11 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="titulo" title="${message(code: 'roteiro.titulo.label', default: 'Titulo')}" />
+					
 						<g:sortableColumn property="dataNormal" title="${message(code: 'roteiro.dataNormal.label', default: 'Data Normal')}" />
 					
-						<g:sortableColumn property="titulo" title="${message(code: 'roteiro.titulo.label', default: 'Titulo')}" />
+						<g:sortableColumn property="horaNormal" title="${message(code: 'roteiro.horaNormal.label', default: 'Hora Normal')}" />
 					
 					</tr>
 				</thead>
@@ -34,9 +36,11 @@
 				<g:each in="${roteiroInstanceList}" status="i" var="roteiroInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${roteiroInstance.id}">${fieldValue(bean: roteiroInstance, field: "dataNormal")}</g:link></td>
+						<td><g:link action="show" id="${roteiroInstance.id}">${fieldValue(bean: roteiroInstance, field: "titulo")}</g:link></td>
 					
-						<td>${fieldValue(bean: roteiroInstance, field: "titulo")}</td>
+						<td><g:formatDate date="${roteiroInstance.dataNormal}" /></td>
+					
+						<td><g:formatDate date="${roteiroInstance.horaNormal}" /></td>
 					
 					</tr>
 				</g:each>

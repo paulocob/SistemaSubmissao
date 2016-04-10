@@ -23,11 +23,29 @@
 			</g:if>
 			<ol class="property-list roteiro">
 			
+				<g:if test="${roteiroInstance?.titulo}">
+				<li class="fieldcontain">
+					<span id="titulo-label" class="property-label"><g:message code="roteiro.titulo.label" default="Titulo" /></span>
+					
+						<span class="property-value" aria-labelledby="titulo-label"><g:fieldValue bean="${roteiroInstance}" field="titulo"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${roteiroInstance?.dataNormal}">
 				<li class="fieldcontain">
 					<span id="dataNormal-label" class="property-label"><g:message code="roteiro.dataNormal.label" default="Data Normal" /></span>
 					
 						<span class="property-value" aria-labelledby="dataNormal-label"><g:formatDate date="${roteiroInstance?.dataNormal}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${roteiroInstance?.horaNormal}">
+				<li class="fieldcontain">
+					<span id="horaNormal-label" class="property-label"><g:message code="roteiro.horaNormal.label" default="Hora Normal" /></span>
+					
+						<span class="property-value" aria-labelledby="horaNormal-label"><g:formatDate date="${roteiroInstance?.horaNormal}" /></span>
 					
 				</li>
 				</g:if>
@@ -39,15 +57,6 @@
 						<g:each in="${roteiroInstance.submissao}" var="s">
 						<span class="property-value" aria-labelledby="submissao-label"><g:link controller="submissao" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${roteiroInstance?.titulo}">
-				<li class="fieldcontain">
-					<span id="titulo-label" class="property-label"><g:message code="roteiro.titulo.label" default="Titulo" /></span>
-					
-						<span class="property-value" aria-labelledby="titulo-label"><g:fieldValue bean="${roteiroInstance}" field="titulo"/></span>
 					
 				</li>
 				</g:if>

@@ -2,21 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: turmaInstance, field: 'alunos', 'error')} ">
-	<label for="alunos">
-		<g:message code="turma.alunos.label" default="Alunos" />
-		
-	</label>
-	<g:select name="alunos" from="${submitleda.Aluno.list()}" multiple="multiple" optionKey="id" size="5" value="${turmaInstance?.alunos*.id}" class="many-to-many"/>
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: turmaInstance, field: 'nomeDaTurma', 'error')} required">
 	<label for="nomeDaTurma">
 		<g:message code="turma.nomeDaTurma.label" default="Nome Da Turma" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nomeDaTurma" required="" value="${turmaInstance?.nomeDaTurma}"/>
+	<g:textField name="nomeDaTurma" maxlength="10" required="" value="${turmaInstance?.nomeDaTurma}"/>
 
 </div>
 
@@ -25,7 +16,7 @@
 		<g:message code="turma.periodo.label" default="Periodo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="periodo" required="" value="${turmaInstance?.periodo}"/>
+	<g:textField name="periodo" maxlength="6" required="" value="${turmaInstance?.periodo}"/>
 
 </div>
 
@@ -34,7 +25,16 @@
 		<g:message code="turma.professor.label" default="Professor" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="professor" required="" value="${turmaInstance?.professor}"/>
+	<g:textField name="professor" maxlength="30" required="" value="${turmaInstance?.professor}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: turmaInstance, field: 'alunos', 'error')} ">
+	<label for="alunos">
+		<g:message code="turma.alunos.label" default="Alunos" />
+		
+	</label>
+	<g:select name="alunos" from="${submitleda.Aluno.list()}" multiple="multiple" optionKey="id" size="5" value="${turmaInstance?.alunos*.id}" class="many-to-many"/>
 
 </div>
 

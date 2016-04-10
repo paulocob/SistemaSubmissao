@@ -5,6 +5,8 @@ class Admin {
     String senha
     
     static constraints = {
+		usuario maxSize : 8, nullable : false
+		senha maxSize : 10, nullable : false, password : true
     }
 	
 	static mapping = {

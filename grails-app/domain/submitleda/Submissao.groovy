@@ -1,12 +1,17 @@
 package submitleda
 
+import java.sql.Time
+
 class Submissao {
   
     Date dataEnvio
+	Time horaEnvio
     Roteiro roteiro
     static belongsTo = [aluno: Aluno]
+	
     static constraints = {
     }
+	
 	static mapping = {
 		table 'submissao'
 		version false

@@ -23,17 +23,6 @@
 			</g:if>
 			<ol class="property-list turma">
 			
-				<g:if test="${turmaInstance?.alunos}">
-				<li class="fieldcontain">
-					<span id="alunos-label" class="property-label"><g:message code="turma.alunos.label" default="Alunos" /></span>
-					
-						<g:each in="${turmaInstance.alunos}" var="a">
-						<span class="property-value" aria-labelledby="alunos-label"><g:link controller="aluno" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${turmaInstance?.nomeDaTurma}">
 				<li class="fieldcontain">
 					<span id="nomeDaTurma-label" class="property-label"><g:message code="turma.nomeDaTurma.label" default="Nome Da Turma" /></span>
@@ -57,6 +46,17 @@
 					<span id="professor-label" class="property-label"><g:message code="turma.professor.label" default="Professor" /></span>
 					
 						<span class="property-value" aria-labelledby="professor-label"><g:fieldValue bean="${turmaInstance}" field="professor"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${turmaInstance?.alunos}">
+				<li class="fieldcontain">
+					<span id="alunos-label" class="property-label"><g:message code="turma.alunos.label" default="Alunos" /></span>
+					
+						<g:each in="${turmaInstance.alunos}" var="a">
+						<span class="property-value" aria-labelledby="alunos-label"><g:link controller="aluno" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

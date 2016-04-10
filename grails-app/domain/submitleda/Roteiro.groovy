@@ -1,12 +1,18 @@
 package submitleda
 
+import java.sql.Time
+
 class Roteiro {
     String titulo
     Date dataNormal
+	Time horaNormal
     static belongsTo = Turma
     static hasMany = [submissao:Submissao,turmas:Turma]
-    static constraints = {
-    }
+    
+	static constraints = {
+		titulo maxSize : 30, nullable : false
+		
+	}
 	
 	static mapping = {
 		table 'roteiro'
