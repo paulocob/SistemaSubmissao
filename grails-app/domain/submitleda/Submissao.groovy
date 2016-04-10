@@ -1,12 +1,18 @@
 package submitleda
 
 class Submissao {
-    int submissaoId
-    int roteiroId
-    int alunoId
+  
     Date dataEnvio
     Roteiro roteiro
     static belongsTo = [aluno: Aluno]
     static constraints = {
     }
+	static mapping = {
+		table 'submissao'
+		version false
+		id column: 'id_submissao', insertable: false, updateable: false
+		nome column: 'dataEnvio'
+		
+	}
+	
 }

@@ -11,12 +11,21 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'roteiroId', 'error')} required">
-	<label for="roteiroId">
-		<g:message code="roteiro.roteiroId.label" default="Roteiro Id" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'submissao', 'error')} ">
+	<label for="submissao">
+		<g:message code="roteiro.submissao.label" default="Submissao" />
+		
 	</label>
-	<g:field name="roteiroId" type="number" value="${roteiroInstance.roteiroId}" required=""/>
+	
+<ul class="one-to-many">
+<g:each in="${roteiroInstance?.submissao?}" var="s">
+    <li><g:link controller="submissao" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="submissao" action="create" params="['roteiro.id': roteiroInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'submissao.label', default: 'Submissao')])}</g:link>
+</li>
+</ul>
+
 
 </div>
 
@@ -29,12 +38,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'turmaId', 'error')} required">
-	<label for="turmaId">
-		<g:message code="roteiro.turmaId.label" default="Turma Id" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'turmas', 'error')} ">
+	<label for="turmas">
+		<g:message code="roteiro.turmas.label" default="Turmas" />
+		
 	</label>
-	<g:field name="turmaId" type="number" value="${roteiroInstance.turmaId}" required=""/>
+	
 
 </div>
 

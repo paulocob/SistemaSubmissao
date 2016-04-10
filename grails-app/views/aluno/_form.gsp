@@ -7,7 +7,7 @@
 		<g:message code="aluno.matricula.label" default="Matricula" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="matricula" required="" value="${alunoInstance?.matricula}"/>
+	<g:field name="matricula" type="number" value="${alunoInstance.matricula}" required=""/>
 
 </div>
 
@@ -35,15 +35,6 @@
 </li>
 </ul>
 
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'turmaId', 'error')} required">
-	<label for="turmaId">
-		<g:message code="aluno.turmaId.label" default="Turma Id" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:field name="turmaId" type="number" value="${alunoInstance.turmaId}" required=""/>
 
 </div>
 

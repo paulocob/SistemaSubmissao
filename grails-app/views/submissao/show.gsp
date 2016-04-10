@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list submissao">
 			
-				<g:if test="${submissaoInstance?.alunoId}">
+				<g:if test="${submissaoInstance?.aluno}">
 				<li class="fieldcontain">
-					<span id="alunoId-label" class="property-label"><g:message code="submissao.alunoId.label" default="Aluno Id" /></span>
+					<span id="aluno-label" class="property-label"><g:message code="submissao.aluno.label" default="Aluno" /></span>
 					
-						<span class="property-value" aria-labelledby="alunoId-label"><g:fieldValue bean="${submissaoInstance}" field="alunoId"/></span>
+						<span class="property-value" aria-labelledby="aluno-label"><g:link controller="aluno" action="show" id="${submissaoInstance?.aluno?.id}">${submissaoInstance?.aluno?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -41,20 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${submissaoInstance?.roteiroId}">
+				<g:if test="${submissaoInstance?.roteiro}">
 				<li class="fieldcontain">
-					<span id="roteiroId-label" class="property-label"><g:message code="submissao.roteiroId.label" default="Roteiro Id" /></span>
+					<span id="roteiro-label" class="property-label"><g:message code="submissao.roteiro.label" default="Roteiro" /></span>
 					
-						<span class="property-value" aria-labelledby="roteiroId-label"><g:fieldValue bean="${submissaoInstance}" field="roteiroId"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${submissaoInstance?.submissaoId}">
-				<li class="fieldcontain">
-					<span id="submissaoId-label" class="property-label"><g:message code="submissao.submissaoId.label" default="Submissao Id" /></span>
-					
-						<span class="property-value" aria-labelledby="submissaoId-label"><g:fieldValue bean="${submissaoInstance}" field="submissaoId"/></span>
+						<span class="property-value" aria-labelledby="roteiro-label"><g:link controller="roteiro" action="show" id="${submissaoInstance?.roteiro?.id}">${submissaoInstance?.roteiro?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

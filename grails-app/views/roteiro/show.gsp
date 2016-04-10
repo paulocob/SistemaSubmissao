@@ -32,11 +32,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${roteiroInstance?.roteiroId}">
+				<g:if test="${roteiroInstance?.submissao}">
 				<li class="fieldcontain">
-					<span id="roteiroId-label" class="property-label"><g:message code="roteiro.roteiroId.label" default="Roteiro Id" /></span>
+					<span id="submissao-label" class="property-label"><g:message code="roteiro.submissao.label" default="Submissao" /></span>
 					
-						<span class="property-value" aria-labelledby="roteiroId-label"><g:fieldValue bean="${roteiroInstance}" field="roteiroId"/></span>
+						<g:each in="${roteiroInstance.submissao}" var="s">
+						<span class="property-value" aria-labelledby="submissao-label"><g:link controller="submissao" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
@@ -50,11 +52,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${roteiroInstance?.turmaId}">
+				<g:if test="${roteiroInstance?.turmas}">
 				<li class="fieldcontain">
-					<span id="turmaId-label" class="property-label"><g:message code="roteiro.turmaId.label" default="Turma Id" /></span>
+					<span id="turmas-label" class="property-label"><g:message code="roteiro.turmas.label" default="Turmas" /></span>
 					
-						<span class="property-value" aria-labelledby="turmaId-label"><g:fieldValue bean="${roteiroInstance}" field="turmaId"/></span>
+						<g:each in="${roteiroInstance.turmas}" var="t">
+						<span class="property-value" aria-labelledby="turmas-label"><g:link controller="turma" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

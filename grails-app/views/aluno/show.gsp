@@ -52,15 +52,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${alunoInstance?.turmaId}">
-				<li class="fieldcontain">
-					<span id="turmaId-label" class="property-label"><g:message code="aluno.turmaId.label" default="Turma Id" /></span>
-					
-						<span class="property-value" aria-labelledby="turmaId-label"><g:fieldValue bean="${alunoInstance}" field="turmaId"/></span>
-					
-				</li>
-				</g:if>
-			
 			</ol>
 			<g:form url="[resource:alunoInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

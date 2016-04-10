@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list admin">
 			
-				<g:if test="${adminInstance?.adminId}">
-				<li class="fieldcontain">
-					<span id="adminId-label" class="property-label"><g:message code="admin.adminId.label" default="Admin Id" /></span>
-					
-						<span class="property-value" aria-labelledby="adminId-label"><g:fieldValue bean="${adminInstance}" field="adminId"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${adminInstance?.senha}">
 				<li class="fieldcontain">
 					<span id="senha-label" class="property-label"><g:message code="admin.senha.label" default="Senha" /></span>

@@ -30,8 +30,6 @@
 					
 						<g:sortableColumn property="professor" title="${message(code: 'turma.professor.label', default: 'Professor')}" />
 					
-						<g:sortableColumn property="turmaId" title="${message(code: 'turma.turmaId.label', default: 'Turma Id')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -43,8 +41,6 @@
 						<td>${fieldValue(bean: turmaInstance, field: "periodo")}</td>
 					
 						<td>${fieldValue(bean: turmaInstance, field: "professor")}</td>
-					
-						<td>${fieldValue(bean: turmaInstance, field: "turmaId")}</td>
 					
 					</tr>
 				</g:each>

@@ -24,13 +24,11 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="alunoId" title="${message(code: 'submissao.alunoId.label', default: 'Aluno Id')}" />
+						<th><g:message code="submissao.aluno.label" default="Aluno" /></th>
 					
 						<g:sortableColumn property="dataEnvio" title="${message(code: 'submissao.dataEnvio.label', default: 'Data Envio')}" />
 					
-						<g:sortableColumn property="roteiroId" title="${message(code: 'submissao.roteiroId.label', default: 'Roteiro Id')}" />
-					
-						<g:sortableColumn property="submissaoId" title="${message(code: 'submissao.submissaoId.label', default: 'Submissao Id')}" />
+						<th><g:message code="submissao.roteiro.label" default="Roteiro" /></th>
 					
 					</tr>
 				</thead>
@@ -38,13 +36,11 @@
 				<g:each in="${submissaoInstanceList}" status="i" var="submissaoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${submissaoInstance.id}">${fieldValue(bean: submissaoInstance, field: "alunoId")}</g:link></td>
+						<td><g:link action="show" id="${submissaoInstance.id}">${fieldValue(bean: submissaoInstance, field: "aluno")}</g:link></td>
 					
 						<td><g:formatDate date="${submissaoInstance.dataEnvio}" /></td>
 					
-						<td>${fieldValue(bean: submissaoInstance, field: "roteiroId")}</td>
-					
-						<td>${fieldValue(bean: submissaoInstance, field: "submissaoId")}</td>
+						<td>${fieldValue(bean: submissaoInstance, field: "roteiro")}</td>
 					
 					</tr>
 				</g:each>

@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'alunoId', 'error')} required">
-	<label for="alunoId">
-		<g:message code="submissao.alunoId.label" default="Aluno Id" />
+<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'aluno', 'error')} required">
+	<label for="aluno">
+		<g:message code="submissao.aluno.label" default="Aluno" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="alunoId" type="number" value="${submissaoInstance.alunoId}" required=""/>
+	<g:select id="aluno" name="aluno.id" from="${submitleda.Aluno.list()}" optionKey="id" required="" value="${submissaoInstance?.aluno?.id}" class="many-to-one"/>
 
 </div>
 
@@ -20,21 +20,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'roteiroId', 'error')} required">
-	<label for="roteiroId">
-		<g:message code="submissao.roteiroId.label" default="Roteiro Id" />
+<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'roteiro', 'error')} required">
+	<label for="roteiro">
+		<g:message code="submissao.roteiro.label" default="Roteiro" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="roteiroId" type="number" value="${submissaoInstance.roteiroId}" required=""/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'submissaoId', 'error')} required">
-	<label for="submissaoId">
-		<g:message code="submissao.submissaoId.label" default="Submissao Id" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:field name="submissaoId" type="number" value="${submissaoInstance.submissaoId}" required=""/>
+	<g:select id="roteiro" name="roteiro.id" from="${submitleda.Roteiro.list()}" optionKey="id" required="" value="${submissaoInstance?.roteiro?.id}" class="many-to-one"/>
 
 </div>
 

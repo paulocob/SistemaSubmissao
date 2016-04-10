@@ -26,11 +26,7 @@
 					
 						<g:sortableColumn property="dataNormal" title="${message(code: 'roteiro.dataNormal.label', default: 'Data Normal')}" />
 					
-						<g:sortableColumn property="roteiroId" title="${message(code: 'roteiro.roteiroId.label', default: 'Roteiro Id')}" />
-					
 						<g:sortableColumn property="titulo" title="${message(code: 'roteiro.titulo.label', default: 'Titulo')}" />
-					
-						<g:sortableColumn property="turmaId" title="${message(code: 'roteiro.turmaId.label', default: 'Turma Id')}" />
 					
 					</tr>
 				</thead>
@@ -40,11 +36,7 @@
 					
 						<td><g:link action="show" id="${roteiroInstance.id}">${fieldValue(bean: roteiroInstance, field: "dataNormal")}</g:link></td>
 					
-						<td>${fieldValue(bean: roteiroInstance, field: "roteiroId")}</td>
-					
 						<td>${fieldValue(bean: roteiroInstance, field: "titulo")}</td>
-					
-						<td>${fieldValue(bean: roteiroInstance, field: "turmaId")}</td>
 					
 					</tr>
 				</g:each>
