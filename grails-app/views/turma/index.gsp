@@ -26,7 +26,7 @@
 					
 						<g:sortableColumn property="nomeDaTurma" title="${message(code: 'turma.nomeDaTurma.label', default: 'Nome Da Turma')}" />
 					
-						<g:sortableColumn property="periodo" title="${message(code: 'turma.periodo.label', default: 'Periodo')}" />
+						<g:sortableColumn property="semestre" title="${message(code: 'turma.semestre.label', default: 'Semestre')}" />
 					
 						<g:sortableColumn property="professor" title="${message(code: 'turma.professor.label', default: 'Professor')}" />
 					
@@ -38,7 +38,7 @@
 					
 						<td><g:link action="show" id="${turmaInstance.id}">${fieldValue(bean: turmaInstance, field: "nomeDaTurma")}</g:link></td>
 					
-						<td>${fieldValue(bean: turmaInstance, field: "periodo")}</td>
+						<td>${fieldValue(bean: turmaInstance, field: "semestre")}</td>
 					
 						<td>${fieldValue(bean: turmaInstance, field: "professor")}</td>
 					

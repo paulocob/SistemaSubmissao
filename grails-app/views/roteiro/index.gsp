@@ -26,7 +26,13 @@
 					
 						<g:sortableColumn property="titulo" title="${message(code: 'roteiro.titulo.label', default: 'Titulo')}" />
 					
+						<g:sortableColumn property="dataLiberacao" title="${message(code: 'roteiro.dataLiberacao.label', default: 'Data Liberacao')}" />
+					
 						<g:sortableColumn property="dataNormal" title="${message(code: 'roteiro.dataNormal.label', default: 'Data Normal')}" />
+					
+						<g:sortableColumn property="environment" title="${message(code: 'roteiro.environment.label', default: 'Environment')}" />
+					
+						<g:sortableColumn property="horaLiberacao" title="${message(code: 'roteiro.horaLiberacao.label', default: 'Hora Liberacao')}" />
 					
 						<g:sortableColumn property="horaNormal" title="${message(code: 'roteiro.horaNormal.label', default: 'Hora Normal')}" />
 					
@@ -38,7 +44,13 @@
 					
 						<td><g:link action="show" id="${roteiroInstance.id}">${fieldValue(bean: roteiroInstance, field: "titulo")}</g:link></td>
 					
+						<td><g:formatDate date="${roteiroInstance.dataLiberacao}" /></td>
+					
 						<td><g:formatDate date="${roteiroInstance.dataNormal}" /></td>
+					
+						<td>${fieldValue(bean: roteiroInstance, field: "environment")}</td>
+					
+						<td><g:formatDate date="${roteiroInstance.horaLiberacao}" /></td>
 					
 						<td><g:formatDate date="${roteiroInstance.horaNormal}" /></td>
 					

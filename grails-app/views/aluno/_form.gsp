@@ -20,6 +20,24 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'login', 'error')} required">
+	<label for="login">
+		<g:message code="aluno.login.label" default="Login" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="login" required="" value="${alunoInstance?.login}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'senha', 'error')} required">
+	<label for="senha">
+		<g:message code="aluno.senha.label" default="Senha" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="senha" required="" value="${alunoInstance?.senha}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: alunoInstance, field: 'submissoes', 'error')} ">
 	<label for="submissoes">
 		<g:message code="aluno.submissoes.label" default="Submissoes" />

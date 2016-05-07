@@ -1,14 +1,14 @@
 package submitleda
 class Turma {
     String nomeDaTurma
-    String periodo
+    String semestre
     String professor
     static hasMany = [roteiro:Roteiro,alunos:Aluno]
  
 
 	static constraints = {
 		nomeDaTurma maxSize : 10, nullable : false
-		periodo maxSize : 6, nullable : false
+		semestre maxSize : 6, nullable : false
 		professor maxSize : 30, nullable : false
 	}
 	

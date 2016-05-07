@@ -7,6 +7,7 @@ class Submissao {
     Date dataEnvio
 	Time horaEnvio
     Roteiro roteiro
+	String arquivo
     static belongsTo = [aluno: Aluno]
 	
     static constraints = {
@@ -17,6 +18,7 @@ class Submissao {
 		version false
 		id column: 'id_submissao', insertable: false, updateable: false
 		nome column: 'dataEnvio'
+		
 		
 	}
 	

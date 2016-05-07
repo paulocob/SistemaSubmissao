@@ -11,12 +11,39 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'dataLiberacao', 'error')} required">
+	<label for="dataLiberacao">
+		<g:message code="roteiro.dataLiberacao.label" default="Data Liberacao" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:datePicker name="dataLiberacao" precision="day"  value="${roteiroInstance?.dataLiberacao}"  />
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'dataNormal', 'error')} required">
 	<label for="dataNormal">
 		<g:message code="roteiro.dataNormal.label" default="Data Normal" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:datePicker name="dataNormal" precision="day"  value="${roteiroInstance?.dataNormal}"  />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'environment', 'error')} required">
+	<label for="environment">
+		<g:message code="roteiro.environment.label" default="Environment" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="environment" required="" value="${roteiroInstance?.environment}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: roteiroInstance, field: 'horaLiberacao', 'error')} required">
+	<label for="horaLiberacao">
+		<g:message code="roteiro.horaLiberacao.label" default="Hora Liberacao" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:datePicker name="horaLiberacao" precision="minute"  value="${roteiroInstance?.horaLiberacao}"  />
 
 </div>
 

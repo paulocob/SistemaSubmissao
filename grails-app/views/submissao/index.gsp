@@ -26,6 +26,8 @@
 					
 						<th><g:message code="submissao.aluno.label" default="Aluno" /></th>
 					
+						<g:sortableColumn property="arquivo" title="${message(code: 'submissao.arquivo.label', default: 'Arquivo')}" />
+					
 						<g:sortableColumn property="dataEnvio" title="${message(code: 'submissao.dataEnvio.label', default: 'Data Envio')}" />
 					
 						<g:sortableColumn property="horaEnvio" title="${message(code: 'submissao.horaEnvio.label', default: 'Hora Envio')}" />
@@ -39,6 +41,8 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${submissaoInstance.id}">${fieldValue(bean: submissaoInstance, field: "aluno")}</g:link></td>
+					
+						<td>${fieldValue(bean: submissaoInstance, field: "arquivo")}</td>
 					
 						<td><g:formatDate date="${submissaoInstance.dataEnvio}" /></td>
 					

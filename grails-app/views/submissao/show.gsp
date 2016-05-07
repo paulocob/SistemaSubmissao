@@ -32,6 +32,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${submissaoInstance?.arquivo}">
+				<li class="fieldcontain">
+					<span id="arquivo-label" class="property-label"><g:message code="submissao.arquivo.label" default="Arquivo" /></span>
+					
+						<span class="property-value" aria-labelledby="arquivo-label"><g:fieldValue bean="${submissaoInstance}" field="arquivo"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${submissaoInstance?.dataEnvio}">
 				<li class="fieldcontain">
 					<span id="dataEnvio-label" class="property-label"><g:message code="submissao.dataEnvio.label" default="Data Envio" /></span>

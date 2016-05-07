@@ -32,11 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${turmaInstance?.periodo}">
+				<g:if test="${turmaInstance?.semestre}">
 				<li class="fieldcontain">
-					<span id="periodo-label" class="property-label"><g:message code="turma.periodo.label" default="Periodo" /></span>
+					<span id="semestre-label" class="property-label"><g:message code="turma.semestre.label" default="Semestre" /></span>
 					
-						<span class="property-value" aria-labelledby="periodo-label"><g:fieldValue bean="${turmaInstance}" field="periodo"/></span>
+						<span class="property-value" aria-labelledby="semestre-label"><g:fieldValue bean="${turmaInstance}" field="semestre"/></span>
 					
 				</li>
 				</g:if>

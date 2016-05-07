@@ -2,6 +2,8 @@ package submitleda
 
 class Aluno {
     String nome
+	String login
+	String senha
     int matricula
     static belongsTo = Turma
     static hasMany = [submissoes:Submissao] 

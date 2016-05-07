@@ -32,11 +32,38 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${roteiroInstance?.dataLiberacao}">
+				<li class="fieldcontain">
+					<span id="dataLiberacao-label" class="property-label"><g:message code="roteiro.dataLiberacao.label" default="Data Liberacao" /></span>
+					
+						<span class="property-value" aria-labelledby="dataLiberacao-label"><g:formatDate date="${roteiroInstance?.dataLiberacao}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${roteiroInstance?.dataNormal}">
 				<li class="fieldcontain">
 					<span id="dataNormal-label" class="property-label"><g:message code="roteiro.dataNormal.label" default="Data Normal" /></span>
 					
 						<span class="property-value" aria-labelledby="dataNormal-label"><g:formatDate date="${roteiroInstance?.dataNormal}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${roteiroInstance?.environment}">
+				<li class="fieldcontain">
+					<span id="environment-label" class="property-label"><g:message code="roteiro.environment.label" default="Environment" /></span>
+					
+						<span class="property-value" aria-labelledby="environment-label"><g:fieldValue bean="${roteiroInstance}" field="environment"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${roteiroInstance?.horaLiberacao}">
+				<li class="fieldcontain">
+					<span id="horaLiberacao-label" class="property-label"><g:message code="roteiro.horaLiberacao.label" default="Hora Liberacao" /></span>
+					
+						<span class="property-value" aria-labelledby="horaLiberacao-label"><g:formatDate date="${roteiroInstance?.horaLiberacao}" /></span>
 					
 				</li>
 				</g:if>

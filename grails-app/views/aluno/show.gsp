@@ -41,6 +41,24 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${alunoInstance?.login}">
+				<li class="fieldcontain">
+					<span id="login-label" class="property-label"><g:message code="aluno.login.label" default="Login" /></span>
+					
+						<span class="property-value" aria-labelledby="login-label"><g:fieldValue bean="${alunoInstance}" field="login"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${alunoInstance?.senha}">
+				<li class="fieldcontain">
+					<span id="senha-label" class="property-label"><g:message code="aluno.senha.label" default="Senha" /></span>
+					
+						<span class="property-value" aria-labelledby="senha-label"><g:fieldValue bean="${alunoInstance}" field="senha"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${alunoInstance?.submissoes}">
 				<li class="fieldcontain">
 					<span id="submissoes-label" class="property-label"><g:message code="aluno.submissoes.label" default="Submissoes" /></span>

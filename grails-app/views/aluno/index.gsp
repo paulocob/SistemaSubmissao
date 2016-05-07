@@ -28,6 +28,10 @@
 					
 						<g:sortableColumn property="matricula" title="${message(code: 'aluno.matricula.label', default: 'Matricula')}" />
 					
+						<g:sortableColumn property="login" title="${message(code: 'aluno.login.label', default: 'Login')}" />
+					
+						<g:sortableColumn property="senha" title="${message(code: 'aluno.senha.label', default: 'Senha')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +41,10 @@
 						<td><g:link action="show" id="${alunoInstance.id}">${fieldValue(bean: alunoInstance, field: "nome")}</g:link></td>
 					
 						<td>${fieldValue(bean: alunoInstance, field: "matricula")}</td>
+					
+						<td>${fieldValue(bean: alunoInstance, field: "login")}</td>
+					
+						<td>${fieldValue(bean: alunoInstance, field: "senha")}</td>
 					
 					</tr>
 				</g:each>

@@ -11,6 +11,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'arquivo', 'error')} required">
+	<label for="arquivo">
+		<g:message code="submissao.arquivo.label" default="Arquivo" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="arquivo" required="" value="${submissaoInstance?.arquivo}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: submissaoInstance, field: 'dataEnvio', 'error')} required">
 	<label for="dataEnvio">
 		<g:message code="submissao.dataEnvio.label" default="Data Envio" />

@@ -11,12 +11,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: turmaInstance, field: 'periodo', 'error')} required">
-	<label for="periodo">
-		<g:message code="turma.periodo.label" default="Periodo" />
+<div class="fieldcontain ${hasErrors(bean: turmaInstance, field: 'semestre', 'error')} required">
+	<label for="semestre">
+		<g:message code="turma.semestre.label" default="Semestre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="periodo" maxlength="6" required="" value="${turmaInstance?.periodo}"/>
+	<g:textField name="semestre" maxlength="6" required="" value="${turmaInstance?.semestre}"/>
 
 </div>
 
